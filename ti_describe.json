@@ -1,0 +1,4115 @@
+{
+  "Resources" : {
+    "recruitingCEJobRequisitions" : {
+      "discrColumnType" : false,
+      "titlePlural" : "Recruiting CE Job Requisitions",
+      "usage" : "BusinessObject",
+      "attributes" : [ {
+        "name" : "SearchId",
+        "type" : "integer",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "defaultValue" : 1,
+        "annotations" : {
+          "description" : "Location ID of the secondary locations in a job requisition details preview."
+        }
+      }, {
+        "name" : "Keyword",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Keyword used to search for job requisitions."
+        }
+      }, {
+        "name" : "CorrectedKeyword",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Corrected keyword used for searching, based on the spell check result."
+        }
+      }, {
+        "name" : "UseExactKeywordFlag",
+        "type" : "boolean",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "maxLength" : "255",
+        "annotations" : {
+          "description" : "Indicates whether the exact keyword is used for searching or if the keyword is automatically spell checked and corrected."
+        }
+      }, {
+        "name" : "SuggestedKeyword",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Suggested keyword based on spell check result."
+        }
+      }, {
+        "name" : "ExecuteSpellCheckFlag",
+        "type" : "boolean",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "maxLength" : "255",
+        "annotations" : {
+          "description" : "Indicates whether a spell check was requested for the keyword."
+        }
+      }, {
+        "name" : "Location",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Location of the job requisition"
+        }
+      }, {
+        "name" : "LocationId",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "ID assigned to the location of the job requisition."
+        }
+      }, {
+        "name" : "Radius",
+        "type" : "integer",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Radius of the job requisition."
+        }
+      }, {
+        "name" : "RadiusUnit",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Unit of the radius of the job requisition."
+        }
+      }, {
+        "name" : "SelectedTitlesFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Facet of the selected title of job requisitions."
+        }
+      }, {
+        "name" : "SelectedCategoriesFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Facet of the selected categories of the job requisitions."
+        }
+      }, {
+        "name" : "SelectedPostingDatesFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Facet of the selected dates of job posting."
+        }
+      }, {
+        "name" : "SelectedLocationsFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Facet of the selected locations of the job requisitions."
+        }
+      }, {
+        "name" : "LastSelectedFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Last selected facet for retrieving job requisitions."
+        }
+      }, {
+        "name" : "Facets",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Facets of the job requisitions."
+        }
+      }, {
+        "name" : "Offset",
+        "type" : "integer",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Offset of the job requisition"
+        }
+      }, {
+        "name" : "Limit",
+        "type" : "integer",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Limit of the job requisition."
+        }
+      }, {
+        "name" : "SortBy",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Sort by attribute for the job requisition."
+        }
+      }, {
+        "name" : "TotalJobsCount",
+        "type" : "integer",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Total job count for the job requisition."
+        }
+      }, {
+        "name" : "Latitude",
+        "type" : "number",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Latitude of the location of job requisition."
+        }
+      }, {
+        "name" : "Longitude",
+        "type" : "number",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Longitude of the location of the job requisition"
+        }
+      }, {
+        "name" : "SiteNumber",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Site number of the job requisition."
+        }
+      }, {
+        "name" : "JobFamilyId",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "ID assigned to the job family."
+        }
+      }, {
+        "name" : "PostingStartDate",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Start date of the job posting."
+        }
+      }, {
+        "name" : "PostingEndDate",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "End date of the job posting."
+        }
+      }, {
+        "name" : "SelectedWorkLocationsFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Facet of the selected work locations."
+        }
+      }, {
+        "name" : "RequisitionId",
+        "type" : "integer",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "ID assigned to the similar job"
+        }
+      }, {
+        "name" : "CandidateNumber",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "ID assigned to each candidate"
+        }
+      }, {
+        "name" : "WorkLocationZipCode",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "ZIP code of the work location."
+        }
+      }, {
+        "name" : "WorkLocationCountryCode",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Country code of the work location."
+        }
+      }, {
+        "name" : "SelectedFlexFieldsFacets",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "annotations" : {
+          "description" : "Facets of the selected job requisitions flexfields."
+        }
+      }, {
+        "name" : "OrganizationId",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Organization ID for a job requisition."
+        }
+      }, {
+        "name" : "SelectedOrganizationsFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Facet of the selected organizations of the job requisitions."
+        }
+      }, {
+        "name" : "UserTargetFacetName",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Name of the facet for which the value list must be filtered by the input term."
+        }
+      }, {
+        "name" : "UserTargetFacetInputTerm",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Term used to filter facet values."
+        }
+      }, {
+        "name" : "HotJobFlag",
+        "type" : "boolean",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "maxLength" : "255",
+        "annotations" : {
+          "description" : "Indicates whether the job requisition is considered a hot job in a job requisition details preview."
+        }
+      }, {
+        "name" : "WorkplaceType",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Workplace type of the job requisition."
+        }
+      }, {
+        "name" : "SelectedWorkplaceTypesFacet",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "Facet of the selected workplace type."
+        }
+      }, {
+        "name" : "BotQRShortCode",
+        "type" : "string",
+        "updatable" : false,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "never",
+        "precision" : 255,
+        "annotations" : {
+          "description" : "The QR short code for the filtered job requisitions that are displayed."
+        }
+      } ],
+      "collection" : {
+        "rangeSize" : 200,
+        "finders" : [ {
+          "name" : "PrimaryKey",
+          "annotations" : {
+            "description" : "Finds job requisitions using a unique ID"
+          },
+          "attributes" : [ {
+            "name" : "SearchId",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "defaultValue" : 1,
+            "annotations" : {
+              "description" : "Finds job requisitions using a search ID and a primary key"
+            }
+          } ]
+        }, {
+          "name" : "findReqs",
+          "title" : "findJobs",
+          "annotations" : {
+            "description" : "Finds job requisitions using find requests"
+          },
+          "attributes" : [ {
+            "name" : "correctedKeyword",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Corrected keyword used for searching, based on the spell check result."
+            }
+          }, {
+            "name" : "executeSpellCheckFlag",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the keyword must be spell checked. The default value is true."
+            }
+          }, {
+            "name" : "facetsList",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and facets list"
+            }
+          }, {
+            "name" : "hotJobFlag",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the job requisition is considered a hot job."
+            }
+          }, {
+            "name" : "jobFamilyId",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and job family ID"
+            }
+          }, {
+            "name" : "keyword",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and keyword"
+            }
+          }, {
+            "name" : "lastSelectedFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and the last selected facet"
+            }
+          }, {
+            "name" : "latitude",
+            "type" : "number",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds recruiting job requisitions using find requests and latitude"
+            }
+          }, {
+            "name" : "limit",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and limit"
+            }
+          }, {
+            "name" : "location",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and location"
+            }
+          }, {
+            "name" : "locationId",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and location ID"
+            }
+          }, {
+            "name" : "longitude",
+            "type" : "number",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds recruiting job requisitions using find requests and longitude"
+            }
+          }, {
+            "name" : "offset",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and offset"
+            }
+          }, {
+            "name" : "organizationId",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Organization ID to find job requisitions."
+            }
+          }, {
+            "name" : "postingEndDate",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and the end date of the job posting"
+            }
+          }, {
+            "name" : "postingStartDate",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and the start date of the job posting"
+            }
+          }, {
+            "name" : "radius",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and radius"
+            }
+          }, {
+            "name" : "radiusUnit",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and the unit of the radius"
+            }
+          }, {
+            "name" : "selectedCategoriesFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and the selected category facet"
+            }
+          }, {
+            "name" : "selectedFlexFieldsFacets",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using selected flexfields facets"
+            }
+          }, {
+            "name" : "selectedLocationsFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and location facet"
+            }
+          }, {
+            "name" : "selectedOrganizationsFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Selected organization facets to find job requisitions."
+            }
+          }, {
+            "name" : "selectedPostingDatesFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and the selected facet of the date of job posting"
+            }
+          }, {
+            "name" : "selectedTitlesFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and title facet"
+            }
+          }, {
+            "name" : "selectedWorkLocationsFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Requisition location ID and unique ID used to find work locations in a job requisition details preview."
+            }
+          }, {
+            "name" : "selectedWorkplaceTypesFacet",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Facet of the selected workplace type."
+            }
+          }, {
+            "name" : "siteNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds recruiting job requisitions using find requests and the site number"
+            }
+          }, {
+            "name" : "sortBy",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and sort by"
+            }
+          }, {
+            "name" : "useExactKeywordFlag",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Indicates whether the exact keyword is used for searching or if the keyword is automatically spell checked and corrected. The default value is false."
+            }
+          }, {
+            "name" : "userTargetFacetInputTerm",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Term used to find facet values for the selected facet."
+            }
+          }, {
+            "name" : "userTargetFacetName",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Name of the facet to find facet values."
+            }
+          }, {
+            "name" : "workLocationCountryCode",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using country code of the work location"
+            }
+          }, {
+            "name" : "workLocationZipCode",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using the ZIP code of the work location"
+            }
+          }, {
+            "name" : "workplaceType",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Workplace type of the job requisition."
+            }
+          } ]
+        }, {
+          "name" : "findReqsByQRShortCode",
+          "title" : "findReqsByBotQRShortCode",
+          "annotations" : {
+            "description" : "Finds job requisitions by QR short code."
+          },
+          "attributes" : [ {
+            "name" : "limit",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "The maximum number of job requisitions displayed per page."
+            }
+          }, {
+            "name" : "offset",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "The offset value to get job requisitions from the result set."
+            }
+          }, {
+            "name" : "qrShortCode",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "The short code associated with the QR code."
+            }
+          }, {
+            "name" : "siteNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "The site number associated with the short code URL."
+            }
+          } ]
+        }, {
+          "name" : "findSimilarRequisitions",
+          "title" : "findSimilarRequisitions",
+          "annotations" : {
+            "description" : "Finds similar jobs"
+          },
+          "attributes" : [ {
+            "name" : "candidateNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds similar jobs using candidate ID"
+            }
+          }, {
+            "name" : "limit",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and limit"
+            }
+          }, {
+            "name" : "offset",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and offset"
+            }
+          }, {
+            "name" : "requisitionId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds similar jobs using job ID"
+            }
+          }, {
+            "name" : "siteNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds similar jobs using site number"
+            }
+          } ]
+        }, {
+          "name" : "findSimilarRequisitionsByCandidate",
+          "title" : "findSimilarRequisitionsByCandidate",
+          "annotations" : {
+            "description" : "Finds jobs by candidate."
+          },
+          "attributes" : [ {
+            "name" : "candidateNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds similar jobs using candidate ID"
+            }
+          }, {
+            "name" : "limit",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and limit"
+            }
+          }, {
+            "name" : "offset",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds job requisitions using find requests and offset"
+            }
+          }, {
+            "name" : "requisitionId",
+            "type" : "integer",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds similar jobs using job ID"
+            }
+          }, {
+            "name" : "siteNumber",
+            "type" : "string",
+            "updatable" : true,
+            "required" : "Optional",
+            "queryable" : false,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Finds similar jobs using site number"
+            }
+          } ]
+        } ],
+        "links" : [ {
+          "rel" : "self",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions",
+          "name" : "self",
+          "kind" : "collection"
+        }, {
+          "rel" : "action",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/action/getRequisitionsLocationCoordinates",
+          "name" : "getRequisitionsLocationCoordinates",
+          "kind" : "other"
+        }, {
+          "rel" : "action",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/action/getRequisitionDetailsForMap",
+          "name" : "getRequisitionDetailsForMap",
+          "kind" : "other"
+        } ],
+        "actions" : [ {
+          "name" : "get",
+          "method" : "GET",
+          "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+          "annotations" : {
+            "title" : "Get all job requisitions"
+          }
+        }, {
+          "name" : "getRequisitionsLocationCoordinates",
+          "batchEnabled" : false,
+          "parameters" : [ {
+            "name" : "searchContext",
+            "type" : "array",
+            "typeProperties" : {
+              "itemType" : "object",
+              "typeProperties" : {
+                "itemType" : "string"
+              }
+            },
+            "mandatory" : false
+          } ],
+          "resultType" : "object",
+          "typeProperties" : {
+            "itemType" : "array",
+            "typeProperties" : {
+              "itemType" : "object",
+              "typeProperties" : {
+                "itemType" : "string"
+              }
+            }
+          },
+          "method" : "POST",
+          "requestType" : [ "application/vnd.oracle.adf.action+json" ],
+          "responseType" : [ "application/vnd.oracle.adf.actionresult+json", "application/json" ],
+          "annotations" : {
+            "title" : "Provide location coordinates",
+            "description" : "Provides the location coordinates for the requisitions to plot on Oracle Maps.",
+            "parameters" : [ {
+              "name" : "searchContext",
+              "description" : "Search criteria entered by the user on the candidate experience site."
+            } ],
+            "return" : {
+              "description" : "Return parameter for the custom action to hold the location coordinate details."
+            }
+          }
+        }, {
+          "name" : "getRequisitionDetailsForMap",
+          "batchEnabled" : false,
+          "parameters" : [ {
+            "name" : "searchContext",
+            "type" : "array",
+            "typeProperties" : {
+              "itemType" : "object",
+              "typeProperties" : {
+                "itemType" : "string"
+              }
+            },
+            "mandatory" : false
+          } ],
+          "resultType" : "object",
+          "typeProperties" : {
+            "itemType" : "array",
+            "typeProperties" : {
+              "itemType" : "object",
+              "typeProperties" : {
+                "itemType" : "array",
+                "typeProperties" : {
+                  "itemType" : "object",
+                  "typeProperties" : {
+                    "itemType" : "string"
+                  }
+                }
+              }
+            }
+          },
+          "method" : "POST",
+          "requestType" : [ "application/vnd.oracle.adf.action+json" ],
+          "responseType" : [ "application/vnd.oracle.adf.actionresult+json", "application/json" ],
+          "annotations" : {
+            "title" : "Provides requisition and location details for the given Requisitions IDs",
+            "description" : "Provides requisition and location details for the given Requisition IDs based on the work location display setting configured for the candidate experience site.",
+            "parameters" : [ {
+              "name" : "searchContext",
+              "description" : "Search parameter to hold requisition IDs, candidate experience site number, and work location display setting."
+            } ],
+            "return" : {
+              "description" : "Return parameter to hold the requisition and location coordinate details for the given Requisition IDs."
+            }
+          }
+        } ]
+      },
+      "item" : {
+        "links" : [ {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/categoriesFacet",
+          "name" : "categoriesFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet",
+          "name" : "flexFieldsFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/locationsFacet",
+          "name" : "locationsFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/organizationsFacet",
+          "name" : "organizationsFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/postingDatesFacet",
+          "name" : "postingDatesFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList",
+          "name" : "requisitionList",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates",
+          "name" : "requisitionLocationsCoordinates",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/titlesFacet",
+          "name" : "titlesFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workLocationsFacet",
+          "name" : "workLocationsFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "child",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workplaceTypesFacet",
+          "name" : "workplaceTypesFacet",
+          "kind" : "collection",
+          "cardinality" : {
+            "value" : "1 to *",
+            "sourceAttributes" : "SearchId",
+            "destinationAttributes" : "SearchId"
+          }
+        }, {
+          "rel" : "self",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+          "name" : "self",
+          "kind" : "item"
+        }, {
+          "rel" : "canonical",
+          "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+          "name" : "canonical",
+          "kind" : "item"
+        } ],
+        "actions" : [ {
+          "name" : "get",
+          "method" : "GET",
+          "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+          "annotations" : {
+            "title" : "Get a job requisition"
+          }
+        } ]
+      },
+      "annotations" : {
+        "description" : "The recruitingCEJobRequisitions resource includes the list of the available requisitions. Note that the service endpoints in this resource category are only for Oracle internal use."
+      },
+      "children" : {
+        "categoriesFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Categories Facet",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "ID assigned to the categories facet."
+            }
+          }, {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Name assigned to the categories facet."
+            }
+          }, {
+            "name" : "TotalCount",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Total count of the categories facet."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 1,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds job categories facet using a unique ID"
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Finds job categories facet using a unique ID and ID"
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/categoriesFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all categories facets"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/categoriesFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/categoriesFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a categories facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The categoriesFacet resource is a child of recruitingCEJobRequisitions. It includes the details of the categories facets. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/categoriesFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/categoriesFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "flexFieldsFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Flexfields Facet",
+          "attributes" : [ {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Name assigned to the flexfields facet."
+            }
+          }, {
+            "name" : "Label",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Label assigned to the flexfields facet."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 0,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds job flexfields facet using a unique ID"
+              },
+              "attributes" : [ {
+                "name" : "Name",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Finds job flexfields facet using a unique ID and ID"
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all flexfields facets"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "child",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}/child/values",
+              "name" : "values",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "Name",
+                "destinationAttributes" : "FlexColumnName"
+              }
+            }, {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a flexfields facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The flexFieldsFacet resource is a child of recruitingCEJobRequisitions. It includes the details of the flexfields facets which are based on the custom flexfields configured by the users. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "children" : {
+            "values" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Flexfield Facet Values",
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "ID assigned to the flexfield facet value."
+                }
+              }, {
+                "name" : "Name",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Name assigned to the flexfields facet value."
+                }
+              }, {
+                "name" : "TotalCount",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Total count of the flexfields facet values."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds job flexfields facet values using a unique ID"
+                  },
+                  "attributes" : [ {
+                    "name" : "Id",
+                    "type" : "string",
+                    "updatable" : true,
+                    "mandatory" : false,
+                    "queryable" : true,
+                    "allowChanges" : "always",
+                    "precision" : 255,
+                    "annotations" : {
+                      "description" : "Finds job flexfields facet values using a unique ID and ID"
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}/child/values",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all flexfields facets values"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}/child/values/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}/child/values/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a flexfields facet values"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The values resource is a child of recruitingCEJobRequisitions. It includes the details of the flexfields facets values. Note that the service endpoints in this resource category are only for Oracle internal use."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}/child/values/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/{id}/child/values/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            }
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/flexFieldsFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "locationsFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Locations Facet",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "ID assigned to the locations facet."
+            }
+          }, {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Name assigned to the locations facet."
+            }
+          }, {
+            "name" : "TotalCount",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Total count of the locations facet."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 1,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds job locations facet using a unique ID"
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Finds job locations facet using a unique ID and ID"
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/locationsFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all location facets"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/locationsFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/locationsFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a location facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The locationsFacet resource is a child of recruitingCEJobRequisitions. It includes the details of the locationsFacet. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/locationsFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/locationsFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "organizationsFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Organizations Facet",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "ID assigned to the organizations facet."
+            }
+          }, {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Name assigned to the organizations facet."
+            }
+          }, {
+            "name" : "TotalCount",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Total count of the organizations facet."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 1,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds job organizations facet using a unique ID."
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Unique ID to find job organizations facets."
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/organizationsFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all organization facets"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/organizationsFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/organizationsFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get an organization facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The organizationsFacet resource is a child of the recruitingCEJobRequisitions and provides details about of the organizations facets. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/organizationsFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/organizationsFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "postingDatesFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Posting Dates Facet",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "ID assigned to the facet of the job posting."
+            }
+          }, {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Name assigned to the facet of the job posting."
+            }
+          }, {
+            "name" : "TotalCount",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Total count of the facet of the job posting."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 1,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds job posting date facet using a unique ID"
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Finds job posting date facet using a unique ID and ID"
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/postingDatesFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all posting date facets"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/postingDatesFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/postingDatesFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a posting date facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The postingDatesFacet resource is a child of recruitingCEJobRequisitions. It includes the details of the posting dates facet. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/postingDatesFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/postingDatesFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "requisitionList" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Requisition List",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "annotations" : {
+              "description" : "ID assigned to the job requisition list."
+            }
+          }, {
+            "name" : "Title",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "annotations" : {
+              "description" : "Title of the requisition list."
+            }
+          }, {
+            "name" : "PostedDate",
+            "type" : "date",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Date of posting of the requisition list."
+            }
+          }, {
+            "name" : "PostingEndDate",
+            "type" : "date",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Posting end date of the job requisition."
+            }
+          }, {
+            "name" : "Language",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 4,
+            "annotations" : {
+              "description" : "Language of the job requisition."
+            }
+          }, {
+            "name" : "PrimaryLocationCountry",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 2,
+            "annotations" : {
+              "description" : "Country of the primary location of the requisition list."
+            }
+          }, {
+            "name" : "GeographyId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Geography ID of the job requisition list."
+            }
+          }, {
+            "name" : "HotJobFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Indicates whether the job requisition is considered a hot job."
+            }
+          }, {
+            "name" : "WorkplaceTypeCode",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 30,
+            "annotations" : {
+              "description" : "Workplace type code in a job requisition details preview."
+            }
+          }, {
+            "name" : "JobFamily",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "annotations" : {
+              "description" : "Job family of the job requisition."
+            }
+          }, {
+            "name" : "JobFunction",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Job function of the job requisition."
+            }
+          }, {
+            "name" : "WorkerType",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Worker type of the job requisition."
+            }
+          }, {
+            "name" : "ContractType",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Contract type of the job requisition."
+            }
+          }, {
+            "name" : "ManagerLevel",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Management level of the job requisition."
+            }
+          }, {
+            "name" : "JobSchedule",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Job schedule of the job requisition."
+            }
+          }, {
+            "name" : "JobShift",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Job shift of the job requisition."
+            }
+          }, {
+            "name" : "JobType",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Job type of the job requisition."
+            }
+          }, {
+            "name" : "StudyLevel",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Education level of the job requisition."
+            }
+          }, {
+            "name" : "DomesticTravelRequired",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Indicates whether domestic travel is required for the job requisition."
+            }
+          }, {
+            "name" : "InternationalTravelRequired",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Indicates whether international travel is required for the job requisition."
+            }
+          }, {
+            "name" : "WorkDurationYears",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Work duration years of the job requisition."
+            }
+          }, {
+            "name" : "WorkDurationMonths",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Work duration months of the job requisition."
+            }
+          }, {
+            "name" : "WorkHours",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Work hours of the job requisition."
+            }
+          }, {
+            "name" : "WorkDays",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Workdays of the job requisition."
+            }
+          }, {
+            "name" : "LegalEmployer",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "annotations" : {
+              "description" : "Legal employer of the job requisition."
+            }
+          }, {
+            "name" : "BusinessUnit",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Business unit name of the job requisition."
+            }
+          }, {
+            "name" : "Department",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 240,
+            "annotations" : {
+              "description" : "Department name of the job requisition."
+            }
+          }, {
+            "name" : "Organization",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 80,
+            "annotations" : {
+              "description" : "Organization name of the job requisition."
+            }
+          }, {
+            "name" : "BusinessUnitId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Business unit identifier of the job requisition."
+            }
+          }, {
+            "name" : "LegalEmployerId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Legal employer identifier of the job requisition."
+            }
+          }, {
+            "name" : "OrganizationId",
+            "type" : "integer",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 18,
+            "annotations" : {
+              "description" : "Organization identifier of the job requisition."
+            }
+          }, {
+            "name" : "MediaThumbURL",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Media thumb URL for the job requisition list."
+            }
+          }, {
+            "name" : "ShortDescriptionStr",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Short description string of the requisition list."
+            }
+          }, {
+            "name" : "PrimaryLocation",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 255,
+            "hasDefaultValueExpression" : true,
+            "title" : "Primary Location",
+            "maxLength" : "255",
+            "dependencies" : [ "GeographyNodeId" ],
+            "annotations" : {
+              "description" : "Primary location of the requisition list."
+            }
+          }, {
+            "name" : "Distance",
+            "type" : "number",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Total distance from the center of a radius search."
+            }
+          }, {
+            "name" : "TrendingFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Indicates whether the job requisition has a high number of job applications and should be displayed as trending in a job requisition details preview.."
+            }
+          }, {
+            "name" : "BeFirstToApplyFlag",
+            "type" : "boolean",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Indicates whether the job requisition has a low number of job applications and will invite candidates to be the first to apply."
+            }
+          }, {
+            "name" : "Relevancy",
+            "type" : "number",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "annotations" : {
+              "description" : "Relevancy score of the job requisition."
+            }
+          }, {
+            "name" : "WorkplaceType",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 255,
+            "hasDefaultValueExpression" : true,
+            "dependencies" : [ "WorkplaceTypeCode" ],
+            "annotations" : {
+              "description" : "Workplace in a job requisition details preview."
+            }
+          }, {
+            "name" : "ExternalQualificationsStr",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Qualifications of the job requisition."
+            }
+          }, {
+            "name" : "ExternalResponsibilitiesStr",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Responsibilities of the job requisition."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 499,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds job requisitions list using a unique ID"
+              },
+              "attributes" : [ ]
+            }, {
+              "name" : "findById",
+              "title" : "findByReqNo",
+              "annotations" : {
+                "description" : "Finds job requisitions list using findbyId"
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "string",
+                "updatable" : true,
+                "required" : "Optional",
+                "queryable" : false,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Finds job requisitions list using findbyId and ID"
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all requisition lists"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "child",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/otherWorkLocations",
+              "name" : "otherWorkLocations",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "RequisitionId",
+                "destinationAttributes" : "RequisitionId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/primaryLocationCoordinates",
+              "name" : "primaryLocationCoordinates",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to 1",
+                "sourceAttributes" : "GeographyNodeId",
+                "destinationAttributes" : "GeographyNodeId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/requisitionFlexFields",
+              "name" : "requisitionFlexFields",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "RequisitionId",
+                "destinationAttributes" : "RequisitionId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/secondaryLocations",
+              "name" : "secondaryLocations",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "RequisitionId",
+                "destinationAttributes" : "RequisitionId"
+              }
+            }, {
+              "rel" : "child",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/workLocation",
+              "name" : "workLocation",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "LocationId",
+                "destinationAttributes" : "LocationId"
+              }
+            }, {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a requisition list"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The requisitionList resource is a child of the recruitingCEJobRequisitions. It includes the details of the requisition lists. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "children" : {
+            "otherWorkLocations" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Other Work Locations",
+              "attributes" : [ {
+                "name" : "LocationId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "inputRequired" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 18,
+                "title" : "Other Work Locations",
+                "properties" : {
+                  "fnd:APPLCORE_SETID_DETERMINANT_ATTR" : "RequisitionBusinessUnitId"
+                },
+                "annotations" : {
+                  "description" : "Location ID of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "RequisitionWorkLocationId",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 18,
+                "hasDefaultValueExpression" : true,
+                "annotations" : {
+                  "description" : "Location ID of the secondary locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "LocationName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Display Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Location name of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine1",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 1",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 1 for other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine2",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 2",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 2 for other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine3",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 3",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 3 for other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine4",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 4",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 4 for other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Building",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Building",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Building of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "TownOrCity",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 60,
+                "title" : "Town or City",
+                "maxLength" : "60",
+                "annotations" : {
+                  "description" : "Town or city of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "PostalCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Postal Code",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Postal code of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Country",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 60,
+                "title" : "Country",
+                "maxLength" : "60",
+                "annotations" : {
+                  "description" : "Country of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Region1",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 120,
+                "title" : "Region 1",
+                "maxLength" : "120",
+                "annotations" : {
+                  "description" : "Region 1 of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Region2",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 120,
+                "title" : "Region 2",
+                "maxLength" : "120",
+                "annotations" : {
+                  "description" : "Region 2 of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Region3",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 120,
+                "title" : "Region 3",
+                "maxLength" : "120",
+                "annotations" : {
+                  "description" : "Region 3 of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Latitude",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Latitude of other work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Longitude",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Longitude of other work locations in a job requisition details preview."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all other work locations in a job requisition details preview using a unique ID."
+                  },
+                  "attributes" : [ {
+                    "name" : "RequisitionWorkLocationId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "always",
+                    "precision" : 18,
+                    "hasDefaultValueExpression" : true,
+                    "annotations" : {
+                      "description" : "Requisition location ID and unique ID used to find work locations in a job requisition details preview."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/otherWorkLocations",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all other work locations in the requisition details preview"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/otherWorkLocations/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/otherWorkLocations/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get an other work location in the requisition details preview"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The otherWorkLocations resource is a child of the recruitingCERequisitionTemplateDetailsPreviews resource and provides details about other work locations used in the job requisition. Note that the service endpoints in this resource category are only for Oracle internal use."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/otherWorkLocations/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/otherWorkLocations/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "primaryLocationCoordinates" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Primary Location Coordinates",
+              "attributes" : [ {
+                "name" : "Latitude",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Latitude of primary location coordinates of the requisition details."
+                }
+              }, {
+                "name" : "Longitude",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Longitude of primary location coordinates of the requisition details."
+                }
+              }, {
+                "name" : "CountryCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 2,
+                "annotations" : {
+                  "description" : "Country code of the primary location coordinates of the requisition details."
+                }
+              }, {
+                "name" : "GeographyId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Geography ID of primary location coordinates of the requisition details."
+                }
+              }, {
+                "name" : "GeographyNodeId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Geography ID of primary location coordinates of the requisition details."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds the requisition details primary location coordinates using a unique ID."
+                  },
+                  "attributes" : [ {
+                    "name" : "GeographyId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "annotations" : {
+                      "description" : "Unique ID and ID used to find media in a job requisition details preview."
+                    }
+                  }, {
+                    "name" : "GeographyNodeId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "annotations" : {
+                      "description" : "Unique ID and ID used to find media in a job requisition details preview."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/primaryLocationCoordinates",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all primary location coordinates for the requisition details"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/primaryLocationCoordinates/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/primaryLocationCoordinates/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a primary location coordinates for the requisition details"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The primaryLocationCoordinates resource is a child of recruitingCEJobRequisitionDetails. It includes details of primary location coordinates. Note that the service endpoints in this resource category are only for Oracle internal use."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/primaryLocationCoordinates/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/primaryLocationCoordinates/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "requisitionFlexFields" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Descriptive Flexfields",
+              "attributes" : [ {
+                "name" : "ContextCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "annotations" : {
+                  "description" : "Context code of the requisition flexfield of the requisition details."
+                }
+              }, {
+                "name" : "SegmentCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "annotations" : {
+                  "description" : "Segment code of the requisition flexfield of the requisition details."
+                }
+              }, {
+                "name" : "Prompt",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 80,
+                "annotations" : {
+                  "description" : "Prompt of the requisition flexfield of the requisition details."
+                }
+              }, {
+                "name" : "Value",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 4000,
+                "annotations" : {
+                  "description" : "Value of the requisition flexfield of the requisition details."
+                }
+              }, {
+                "name" : "DATATYPE",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Data type of the requisition flexfield of the requisition details."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds the requisition descriptive flexfields."
+                  },
+                  "attributes" : [ ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/requisitionFlexFields",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all requisition descriptive flexfields"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/requisitionFlexFields/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/requisitionFlexFields/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a requisition descriptive flexfield"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The requisitionFlexFields resource is a child of recruitingCERequisitionTemplateDetailsPreviews. It includes the details of the requisition flexfields. Note that the service endpoints in this resource category are only for Oracle internal use."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/requisitionFlexFields/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/requisitionFlexFields/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "secondaryLocations" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Secondary Locations",
+              "attributes" : [ {
+                "name" : "RequisitionLocationId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Location ID of the secondary locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "GeographyNodeId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "title" : "Primary Location",
+                "annotations" : {
+                  "description" : "Geography node ID for the secondary locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "GeographyId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Geography ID for the secondary locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Name",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "hasDefaultValueExpression" : true,
+                "dependencies" : [ "GeographyNodeId" ],
+                "annotations" : {
+                  "description" : "Location ID of the secondary locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "CountryCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 2,
+                "annotations" : {
+                  "description" : "Country code for the secondary locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Latitude",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Latitude of the secondary locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Longitude",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Longitude of the secondary locations in a job requisition details preview."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all secondary locations in a job requisition details preview using a unique ID."
+                  },
+                  "attributes" : [ {
+                    "name" : "RequisitionLocationId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "annotations" : {
+                      "description" : "Requisition location ID and unique ID used to find work locations in a job requisition details preview."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/secondaryLocations",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all secondary locations in the requisition details preview"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/secondaryLocations/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/secondaryLocations/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a secondary location in the requisition details preview"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The secondaryLocations resource is a child of the recruitingCERequisitionTemplateDetailsPreviews resource and provides details about the secondary locations used in the job requisition. Note that the service endpoints in this resource category are only for Oracle internal use."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/secondaryLocations/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/secondaryLocations/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            },
+            "workLocation" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Work Locations",
+              "attributes" : [ {
+                "name" : "LocationId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 18,
+                "annotations" : {
+                  "description" : "Location ID of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "LocationName",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : true,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Display Name",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Location name of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine1",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 1",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 1 of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine2",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 2",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 2 of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine3",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 3",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 3 of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "AddressLine4",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Address Line 4",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Address line 4 of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "Building",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 240,
+                "title" : "Building",
+                "maxLength" : "240",
+                "annotations" : {
+                  "description" : "Building of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "TownOrCity",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 60,
+                "title" : "Town or City",
+                "maxLength" : "60",
+                "annotations" : {
+                  "description" : "Town or city of work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "PostalCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 30,
+                "title" : "Postal Code",
+                "maxLength" : "30",
+                "annotations" : {
+                  "description" : "Postal code of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "Country",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 60,
+                "title" : "Country",
+                "maxLength" : "60",
+                "annotations" : {
+                  "description" : "Country of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "Region1",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 120,
+                "title" : "Region 1",
+                "maxLength" : "120",
+                "annotations" : {
+                  "description" : "Region 1 of work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Region2",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 120,
+                "title" : "Region 2",
+                "maxLength" : "120",
+                "annotations" : {
+                  "description" : "Region 2 of work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Region3",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "never",
+                "precision" : 120,
+                "title" : "Region 3",
+                "maxLength" : "120",
+                "annotations" : {
+                  "description" : "Region 3 of work locations in a job requisition details preview."
+                }
+              }, {
+                "name" : "Latitude",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Latitude of work locations  in a job requisition details preview."
+                }
+              }, {
+                "name" : "Longitude",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Longitude of work locations  in a job requisition details preview."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all work locations in job requisition details preview using a primary key."
+                  },
+                  "attributes" : [ {
+                    "name" : "LocationId",
+                    "type" : "integer",
+                    "updatable" : true,
+                    "mandatory" : true,
+                    "queryable" : true,
+                    "allowChanges" : "never",
+                    "precision" : 18,
+                    "annotations" : {
+                      "description" : "Location ID and primary key used to find work locations in job requisition details preview."
+                    }
+                  } ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/workLocation",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all work locations in the requisition details preview"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/workLocation/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/workLocation/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a work location in the requisition details preview"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The workLocation resource is a child of the recruitingCERequisitionTemplateDetailsPreviews resource and provides details about work locations used in the job requisition. Note that the service endpoints in this resource category are only for Oracle internal use."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/workLocation/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/{id}/child/workLocation/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            }
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionList/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "requisitionLocationsCoordinates" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Requisition Locations Coordinates",
+          "attributes" : [ {
+            "name" : "RequisitionNumber",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : false,
+            "allowChanges" : "never",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Requisition number of the requisition locations coordinates."
+            }
+          }, {
+            "name" : "RequisitionTitle",
+            "type" : "string",
+            "updatable" : false,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "never",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Requisition title of the requisition locations coordinates."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 0,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds all requisition locations coordinates using a unique ID."
+              },
+              "attributes" : [ ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all requisitions locations coordinates"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "child",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}/child/locationCoordinates",
+              "name" : "locationCoordinates",
+              "kind" : "collection",
+              "cardinality" : {
+                "value" : "1 to *",
+                "sourceAttributes" : "RequisitionId",
+                "destinationAttributes" : "RequisitionId"
+              }
+            }, {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a requisition locations coordinates"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The requisitionLocationsCoordinates resource is a child of the recruitingCEJobRequisitions resource and provides details about the coordinates of the requisition's locations. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "children" : {
+            "locationCoordinates" : {
+              "discrColumnType" : false,
+              "titlePlural" : "Location Coordinates",
+              "attributes" : [ {
+                "name" : "LocationId",
+                "type" : "integer",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "annotations" : {
+                  "description" : "Location ID of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "LocationType",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Location type of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Latitude",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Latitude of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Longitude",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Longitude of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "AddressLine1",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Address line 1 of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Building",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Building of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Country",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Country of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Name",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Name of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "PostalCode",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Postal code of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Region1",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Region 1 of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Region2",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Region 2 of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "Region3",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Region 3 of the requisition locations coordinates."
+                }
+              }, {
+                "name" : "TownOrCity",
+                "type" : "string",
+                "updatable" : false,
+                "mandatory" : false,
+                "queryable" : false,
+                "allowChanges" : "never",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Town or city of the requisition locations coordinates."
+                }
+              } ],
+              "collection" : {
+                "rangeSize" : 0,
+                "finders" : [ {
+                  "name" : "PrimaryKey",
+                  "annotations" : {
+                    "description" : "Finds all locations coordinates using a unique ID."
+                  },
+                  "attributes" : [ ]
+                } ],
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}/child/locationCoordinates",
+                  "name" : "self",
+                  "kind" : "collection"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get all locations coordinates"
+                  }
+                } ]
+              },
+              "item" : {
+                "links" : [ {
+                  "rel" : "self",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}/child/locationCoordinates/{id}",
+                  "name" : "self",
+                  "kind" : "item"
+                }, {
+                  "rel" : "parent",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}",
+                  "name" : "parent",
+                  "kind" : "item"
+                }, {
+                  "rel" : "canonical",
+                  "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}/child/locationCoordinates/{id}",
+                  "name" : "canonical",
+                  "kind" : "item"
+                } ],
+                "actions" : [ {
+                  "name" : "get",
+                  "method" : "GET",
+                  "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+                  "annotations" : {
+                    "title" : "Get a location coordinates"
+                  }
+                } ]
+              },
+              "annotations" : {
+                "description" : "The locationsCoordinates resource is a child of the recruitingCEJobRequisitions resource and provides details about locations coordinates. Note that the service endpoints in this resource category are only for Oracle internal use."
+              },
+              "links" : [ {
+                "rel" : "self",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}/child/locationCoordinates/describe",
+                "name" : "self",
+                "kind" : "describe"
+              }, {
+                "rel" : "canonical",
+                "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/{id}/child/locationCoordinates/describe",
+                "name" : "canonical",
+                "kind" : "describe"
+              } ]
+            }
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/requisitionLocationsCoordinates/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "titlesFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Titles Facet",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "ID assigned to the facet of titles."
+            }
+          }, {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Name assigned to the facet of titles."
+            }
+          }, {
+            "name" : "TotalCount",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Total count of the facet of titles."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 1,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds job titles facet using a unique ID"
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Finds job titles facet using a unique ID and ID"
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/titlesFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all titles facets"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/titlesFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/titlesFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a titles facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The titlesFacet resource is a child of the recruitingCEJobRequisitions resource. It includes the details of the titles facet. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/titlesFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/titlesFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "workLocationsFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Work Locations Facet",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "ID of the work location facet."
+            }
+          }, {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Name of the work location facet."
+            }
+          }, {
+            "name" : "TotalCount",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Total count of the work location facet."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 1,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds work locations facet using a unique ID"
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "integer",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "annotations" : {
+                  "description" : "Finds work locations facet using a unique ID and ID"
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workLocationsFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all work location facets"
+              }
+            }, {
+              "name" : "create",
+              "method" : "POST",
+              "requestType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Submit all work location facets"
+              }
+            }, {
+              "name" : "upsert",
+              "method" : "POST",
+              "header" : "Upsert-Mode=true",
+              "requestType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ]
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workLocationsFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workLocationsFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a work location facet"
+              }
+            }, {
+              "name" : "update",
+              "method" : "PATCH",
+              "requestType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Update a work location facet"
+              }
+            }, {
+              "name" : "delete",
+              "method" : "DELETE",
+              "annotations" : {
+                "title" : "Delete a work location facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The workLocationsFacet resource is a child of the recruitingCEJobRequisitions resource. It includes the details of the all the work locations facet. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workLocationsFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workLocationsFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        },
+        "workplaceTypesFacet" : {
+          "discrColumnType" : false,
+          "titlePlural" : "Workplace Type Facet",
+          "attributes" : [ {
+            "name" : "Id",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Unique identifier of the workplace type facet."
+            }
+          }, {
+            "name" : "Name",
+            "type" : "string",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "precision" : 255,
+            "annotations" : {
+              "description" : "Name of the workplace type facet."
+            }
+          }, {
+            "name" : "TotalCount",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : false,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "annotations" : {
+              "description" : "Total count of the workplace type facet."
+            }
+          } ],
+          "collection" : {
+            "rangeSize" : 1,
+            "finders" : [ {
+              "name" : "PrimaryKey",
+              "annotations" : {
+                "description" : "Finds workplace type facets that match the primary key criteria."
+              },
+              "attributes" : [ {
+                "name" : "Id",
+                "type" : "string",
+                "updatable" : true,
+                "mandatory" : false,
+                "queryable" : true,
+                "allowChanges" : "always",
+                "precision" : 255,
+                "annotations" : {
+                  "description" : "Unique identifier of the workplace type facet."
+                }
+              } ]
+            } ],
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workplaceTypesFacet",
+              "name" : "self",
+              "kind" : "collection"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get all workplace type facets"
+              }
+            } ]
+          },
+          "item" : {
+            "links" : [ {
+              "rel" : "self",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workplaceTypesFacet/{id}",
+              "name" : "self",
+              "kind" : "item"
+            }, {
+              "rel" : "parent",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}",
+              "name" : "parent",
+              "kind" : "item"
+            }, {
+              "rel" : "canonical",
+              "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workplaceTypesFacet/{id}",
+              "name" : "canonical",
+              "kind" : "item"
+            } ],
+            "actions" : [ {
+              "name" : "get",
+              "method" : "GET",
+              "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+              "annotations" : {
+                "title" : "Get a workplace type facet"
+              }
+            } ]
+          },
+          "annotations" : {
+            "description" : "The workplaceTypesFacet resource is a child of the recruitingCEJobRequisitions resource. It includes the details of the workplace type facet. Note that the service endpoints in this resource category are only for Oracle internal use."
+          },
+          "links" : [ {
+            "rel" : "self",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workplaceTypesFacet/describe",
+            "name" : "self",
+            "kind" : "describe"
+          }, {
+            "rel" : "canonical",
+            "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/{id}/child/workplaceTypesFacet/describe",
+            "name" : "canonical",
+            "kind" : "describe"
+          } ]
+        }
+      },
+      "links" : [ {
+        "rel" : "self",
+        "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/describe",
+        "name" : "self",
+        "kind" : "describe"
+      }, {
+        "rel" : "canonical",
+        "href" : "https://edbz.fa.us2.oraclecloud.com:443/hcmRestApi/resources/11.13.18.05/recruitingCEJobRequisitions/describe",
+        "name" : "canonical",
+        "kind" : "describe"
+      } ]
+    }
+  }
+}
