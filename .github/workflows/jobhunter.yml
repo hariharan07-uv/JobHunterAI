@@ -25,7 +25,12 @@ jobs:
       - name: Run Aggregator
         run: |
           python aggregator.py
-
+- name: Send Telegram Alert
+  env:
+    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+    TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  run: |
+    python telegram_notify.py
       - name: Upload CSV
         uses: actions/upload-artifact@v4
         with:
