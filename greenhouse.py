@@ -13,18 +13,19 @@ COMPANIES = [
 KEYWORDS = [
     "embedded",
     "firmware",
-    "hardware",
     "electronics",
-    "robotics",
-    "iot",
+    "hardware",
     "pcb",
-    "fpga",
-    "electrical",
-    "microcontroller",
+    "iot",
+    "robotics",
+    "stm32",
+    "esp32",
     "rtos",
-    "automotive",
-    "validation engineer",
-    "test engineer"
+    "microcontroller",
+    "software",
+    "systems",
+    "engineering",
+    "engineer"
 ]
 print("=" * 60)
 print("JOB HUNTER AI")
